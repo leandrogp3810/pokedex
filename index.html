@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -17,216 +17,225 @@
 
     </header>
     <main>
-        <section class="d-flex flex-column">
+        <section class="d-flex flex-column flex-wrap align-content-center align-items-center">
+
             <div>
                 <h1>Pokédex</h1>
             </div>
-            <section>
-                <form>
-                    <section>
-                        <label for="busqueda">Nombre o numero</label>
-                        <input type="search" name="busqueda" id="busqueda" class="border">
-                        <button><i class="bi bi-search"></i></button>
+            <section class="d-flex justify-content-evenly flex-column flex-md-row py-3 bg-success">
+                <form class="col-md-6">
+                    <section class="d-flex flex-column">
+                        <label for="busqueda" class="fs-5">Nombre o numero</label>
+                        <sectio>
+                            <input type="search" name="busqueda" id="busqueda" class="border fs-4 bg-light text-black rounded-0">
+                            <button><i class="bi bi-search fs-4 "></i></button>
+                        </sectio>
                     </section>
                 </form>
+
+                <section class="w-50 border col-md-6">
+                    <p class="fs-4">Busca un Pokémon por su nombre o su numero de la Pokédex Nacional.</p>
+                </section>
             </section>
-            <section>
-                <h2>Busca un Pokémon por su nombre o su numero de la Pokédex Nacional.</h2>
-            </section>
-            <section>
+            <section class="py-3">
                 <label for="orden">Ordernar por:</label>
-                <select class="border" name="orden" id="orden">
+                <select class="border bg-light text-black" name="orden" id="orden">
                     <option value="NumInf">Numero inferior a mayor</option>
                     <option value="NumMay">Numero mayor a inferior</option>
                     <option value="A-Z">De A - Z</option>
                     <option value="Z-A">De Z - A</option>
                 </select>
             </section>
-            <article class="row justify-content-evenly">
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+
+            <article class="row justify-content-evenly w-75 bg-light ">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card plant1">
                         <img src="./img/bulbasaur.png" class="card-img-top w-50" alt="bulbasaur-001">
                         <div class="card-body">
-                            <p class="card-text">N° 001</p>
-                            <h3>Bulbasaur</h3>
+                            <p class="card-text text-black-50">N° 001</p>
+                            <h3 class="text-black">Bulbasaur</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>Planta</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemPlant">Planta</p>
                                 </div>
-                                <div class="w-50 text-center border">
-                                    <p>Veneno</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemPoisson">Veneno</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card plant2">
                         <img src="./img/Ivysaur.png" class="card-img-top w-50" alt="Ivysaur-002">
                         <div class="card-body">
-                            <p class="card-text">N° 002</p>
-                            <h3>Ivysaur</h3>
+                            <p class="card-text text-black-50">N° 002</p>
+                            <h3 class="text-black">Ivysaur</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>Planta</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemPlant">Planta</p>
                                 </div>
-                                <div class="w-50 text-center border">
-                                    <p>Veneno</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemPoisson">Veneno</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card plant3">
                         <img src="./img/Venusaur.png" class="card-img-top w-50" alt="Venusaur-003">
                         <div class="card-body">
-                            <p class="card-text">N° 003</p>
-                            <h3>Venusaur</h3>
+                            <p class="card-text text-black-50">N° 003</p>
+                            <h3 class="text-black">Venusaur</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>Planta</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemPlant">Planta</p>
                                 </div>
-                                <div class="w-50 text-center border">
-                                    <p>Veneno</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemPoisson">Veneno</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card fire1">
                         <img src="./img/charmander.png" class="card-img-top w-50" alt="charmander-004">
                         <div class="card-body">
-                            <p class="card-text">N° 004</p>
-                            <h3>charmander</h3>
+                            <p class="card-text text-black-50">N° 004</p>
+                            <h3 class="text-black">charmander</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>fuego</p>
+                                <div class="w-50 text-center ">
+                                    <p class=" mx-2 px-2 border bg-danger">fuego</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card fire2">
                         <img src="./img/charmeleon.png" class="card-img-top w-50" alt="charmmeleon-005">
                         <div class="card-body">
-                            <p class="card-text">N° 005</p>
-                            <h3>charmmeleon</h3>
+                            <p class="card-text text-black-50">N° 005</p>
+                            <h3 class="text-black">charmmeleon</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>fuego</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 bg-danger">fuego</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card fire3">
                         <img src="./img/charizard.png" class="card-img-top w-50" alt="charrizard-006">
                         <div class="card-body">
-                            <p class="card-text">N° 006</p>
-                            <h3>charrizard</h3>
+                            <p class="card-text text-black-50">N° 006</p>
+                            <h3 class="text-black">charrizard</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>fuego</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 bg-danger">fuego</p>
                                 </div>
-                                <div class="w-50 text-center border">
-                                    <p>volador</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 text-black elemFly">volador</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card water1">
                         <img src="./img/Squirtle.png" class="card-img-top w-50" alt="Squirtle-007">
                         <div class="card-body">
-                            <p class="card-text">N° 007</p>
-                            <h3>Squirtle</h3>
+                            <p class="card-text text-black-50">N° 007</p>
+                            <h3 class="text-black">Squirtle</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>Agua</p>
+                                <div class=" text-center">
+                                    <p class="border mx-2 px-2 elemWater">Agua</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card water2">
                         <img src="./img/Wartortle.png" class="card-img-top w-50" alt="wartortle-008">
                         <div class="card-body">
-                            <p class="card-text">N° 008</p>
-                            <h3>Wartortle</h3>
+                            <p class="card-text text-black-50">N° 008</p>
+                            <h3 class="text-black">Wartortle</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>Agua</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemWater">Agua</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card water3">
                         <img src="./img/blastoise.png" class="card-img-top w-50" alt="blastoise-009">
                         <div class="card-body">
-                            <p class="card-text">N° 009</p>
-                            <h3>blastoise</h3>
+                            <p class="card-text text-black-50">N° 009</p>
+                            <h3 class="text-black">blastoise</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>Agua</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemWater">Agua</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card bug1">
                         <img src="./img/caterpie.png" class="card-img-top w-50" alt="caterpie-010">
                         <div class="card-body">
-                            <p class="card-text">N° 010</p>
-                            <h3>caterpie</h3>
+                            <p class="card-text text-black-50">N° 010</p>
+                            <h3 class="text-black">caterpie</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>Bicho</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 bg-success">Bicho</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card bug2">
                         <img src="./img/metapod.png" class="card-img-top w-50" alt="metapod-011">
                         <div class="card-body">
-                            <p class="card-text">N° 011</p>
-                            <h3>metapod</h3>
+                            <p class="card-text text-black-50">N° 011</p>
+                            <h3 class="text-black">metapod</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>bicho</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 bg-success">bicho</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
-                <section class="col-lg-3">
-                    <div class="card tam-card">
+                <section class="col-lg-3 pt-3 col-md-4 col-sm-6">
+                    <div class="card tam-card bug3">
                         <img src="./img/butterfree.png" class="card-img-top w-50" alt="butterfree-012">
                         <div class="card-body">
-                            <p class="card-text">N° 012</p>
-                            <h3>butterfree</h3>
+                            <p class="card-text text-black-50">N° 012</p>
+                            <h3 class="text-black">butterfree</h3>
                             <section class=" d-flex  ">
-                                <div class="w-50 text-center border">
-                                    <p>bicho</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 bg-success">bicho</p>
                                 </div>
-                                <div class="w-50 text-center border">
-                                    <p>volador</p>
+                                <div class=" text-center ">
+                                    <p class="border mx-2 px-2 elemFly text-black">volador</p>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </section>
+                <section class="d-flex justify-content-center py-3">
+                    <button class="btn bg-primary text-light">Cargar mas Pokémons</button>
+                </section>
             </article>
+
         </section>
     </main>
     <footer>
